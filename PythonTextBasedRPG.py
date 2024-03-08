@@ -8,9 +8,9 @@ while play_again:
     start = input("Would you rather play the game or perish? ")
     if start.lower() == "play":
         print("Great! Let's play the game!")
-        setting = input("Would you like to go to the jungle, the desert, or the mysterious third place? ")
+        setting = input("Would you like to go to the jungle(1), the desert(2), or the mysterious third place(3) ? ")
 
-        if setting.lower() == "jungle":
+        if setting.lower() == "1":
             print("Welcome to the mighty Amazon rainforest! Your tour guide told you to wait here...")
             response = input("He has been gone a long time. Do you follow him or wait here? ")
 
@@ -40,7 +40,7 @@ while play_again:
                     else:
                         print("Invalid response! You lose!")
 
-        elif setting.lower() == "desert":
+        elif setting.lower() == "2":
             print("Welcome to the mighty Sahara Desert! Your tour guide told you to wait here...")
             response = input("He has been gone a long time. Do you follow him or wait here? ")
 
@@ -70,7 +70,7 @@ while play_again:
                     else:
                         print("Invalid response! You lose!")
 
-        elif setting.lower() == "third place":
+        elif setting.lower() == "3":
             print("You have chosen the mysterious third place...")
             print("Welcome to Bikini Bottom! Your guide, Spongebob told you to wait here while he goes into the goo lagon to check things out...")
             response = input("He has been gone a long time. Do you follow him or wait here? ")
