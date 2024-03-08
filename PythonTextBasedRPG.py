@@ -12,60 +12,60 @@ while play_again:
 
         if setting.lower() == "1":
             print("Welcome to the mighty Amazon rainforest! Your tour guide told you to wait here...")
-            response = input("He has been gone a long time. Do you follow him or wait here? ")
+            response = input("He has been gone a long time. Do you follow him(1) or wait here?(2) ")
 
-            if response.lower() == "follow":
+            if response.lower() == "1":
                 print("You follow him into the trees...")
-                transport = input("You see a canoe nearby. Walk or take the canoe down the river? ")
+                transport = input("You see a canoe nearby. Walk(1) or take the canoe down the river(2)? ")
 
-                if transport.lower() == "walk":
+                if transport.lower() == "1":
                     print("After walking for a few minutes, you get eaten by a giant snake and die. (Ending 3)")
-                elif transport.lower() == "canoe":
+                elif transport.lower() == "2":
                     print("You take the canoe down the river and eventually fall down a huge waterfall and die. (Ending 4)")
 
-            elif response.lower() == 'wait':
+            elif response.lower() == '2':
                 print("You wait another ten minutes, and he still isn't here!")
-                decision = input("Do you wait some more or go find him? ")
+                decision = input("Do you wait some more(1) or go find him(2)? ")
 
                 if decision.lower() == "wait more":
                     print("You waited a little longer, your tour guide returns, and you both go home safe. (Ending 5)")
                 elif decision.lower() == "find him":
                     print("You follow him into the trees...")
-                    transport = input("You see a canoe nearby. Walk or take the canoe down the river? ")
+                    transport = input("You see a canoe nearby. Walk(1) or take the canoe down the river(2)? ")
 
-                    if transport.lower() == "walk":
+                    if transport.lower() == "1":
                         print("After walking for a few minutes, you get eaten by a giant snake and die. (Ending 3)")
-                    elif transport.lower() == "canoe":
+                    elif transport.lower() == "2":
                         print("You take the canoe down the river and eventually fall down a huge waterfall and die. (Ending 4)")
                     else:
                         print("Invalid response! You lose!")
 
         elif setting.lower() == "2":
             print("Welcome to the mighty Sahara Desert! Your tour guide told you to wait here...")
-            response = input("He has been gone a long time. Do you follow him or wait here? ")
+            response = input("He has been gone a long time. Do you follow him(1) or wait here(2)? ")
 
-            if response.lower() == "follow":
+            if response.lower() == "1":
                 print("You follow him into the dunes...")
-                transport = input("You follow him into the dunes and you see a tree and water in the distance... Do you go to the oasis, or go in the opposite direction? ")
+                transport = input("You follow him into the dunes and you see a tree and water in the distance... Do you go to the oasis(1), or go in the opposite direction(2)? ")
 
-                if transport.lower() == "oasis":
+                if transport.lower() == "1":
                     print("You walk to the oasis, and it turns out it was an illusion... You pass out due to the heat and die. (Ending 6)")
-                elif transport.lower() == "opposite direction":
+                elif transport.lower() == "2":
                     print("You end up walking in the opposite direction and finding a village. They give you water and food, and you survive! (Ending 7)")
 
-            elif response.lower() == 'wait':
+            elif response.lower() == '2':
                 print("You wait another ten minutes, and he still isn't here!")
-                decision = input("Do you want to wait again or go find him? ")
+                decision = input("Do you want to wait again(1) or go find him(2)? ")
 
-                if decision.lower() == "wait again":
+                if decision.lower() == "1":
                     print("Your tour guide comes back and says it is too hot today to go out. You go home safe. (Ending 8)")
-                elif decision.lower() == "find him":
+                elif decision.lower() == "2":
                     print("You follow him into the dunes...")
-                    transport = input("You follow him into the dunes and you see a tree and water in the distance... Do you go to the oasis, or go in the opposite direction? ")
+                    transport = input("You follow him into the dunes and you see a tree and water in the distance... Do you go to the oasis(1), or go in the opposite direction(2)? ")
 
-                    if transport.lower() == "oasis":
+                    if transport.lower() == "1":
                         print("You walk to the oasis, and it turns out it was an illusion... You pass out due to the heat and die. (Ending 6)")
-                    elif transport.lower() == "opposite direction":
+                    elif transport.lower() == "2":
                         print("You end up walking in the opposite direction and finding a village. They give you water and food, and you survive! (Ending 7)")
                     else:
                         print("Invalid response! You lose!")
@@ -73,30 +73,30 @@ while play_again:
         elif setting.lower() == "3":
             print("You have chosen the mysterious third place...")
             print("Welcome to Bikini Bottom! Your guide, Spongebob told you to wait here while he goes into the goo lagon to check things out...")
-            response = input("He has been gone a long time. Do you follow him or wait here? ")
+            response = input("He has been gone a long time. Do you follow him(1) or wait here(2)? ")
 
-            if response.lower() == "follow":
+            if response.lower() == "1":
                 print("You follow him into the goo lagon...")
-                transport = input("You follow him into the goo lagon and you see a crazed fish in the distance! Do you run or stand your ground? ")
+                transport = input("You follow him into the goo lagon and you see a crazed fish in the distance! Do you run(1) or stand your ground(2)? ")
 
-                if transport.lower() == "run":
+                if transport.lower() == "1":
                     print("As you run away, you realize it was the hash slinging slasher coming to get you... He gets you and eats you... You perished! (Ending 9) ")
-                elif transport.lower() == "stand ground":
+                elif transport.lower() == "2":
                     print("You end up standing your ground, and once the hash slinging slasher gets to you... It gets intimidated and swims off! You survived! (Ending 10)")
 
-            elif response.lower() == 'wait':
+            elif response.lower() == '2':
                 print("You wait another ten minutes, and Spongebob still isn't here!")
-                transport = input("Do you want to wait again or go find him? ")
+                transport = input("Do you want to wait again(1) or go find him(2)? ")
 
-                if transport.lower() == "wait again":
-                    print("Spongebob comes back and says it is too hot today to go out to swim today. You go home safe. (Ending 11)")
-                elif transport.lower() == "find him":
+                if transport.lower() == "1":
+                    print("Spongebob comes back and says it is too hot today to go out to goo lagon today. You go home safe. (Ending 11)")
+                elif transport.lower() == "2":
                     print("You follow him into the goo lagon...")
-                    transport = input("You follow him into the goo lagon and you see a crazed fish in the distance! Do you run or stand your ground? ")
+                    transport = input("You follow him into the goo lagon and you see a crazed fish in the distance! Do you run(1) or stand your ground(2)? ")
 
-                    if transport.lower() == "run":
+                    if transport.lower() == "1":
                         print("As you run away, you realize it was the hash slinging slasher coming to get you... He gets you and eats you... You perished! (Ending 9) ")
-                    elif transport.lower() == "stand ground":
+                    elif transport.lower() == "2":
                         print("You end up standing your ground, and once the hash slinging slasher gets to you... It gets intimidated and swims off! You survived! (Ending 10)")
 
                     else:
